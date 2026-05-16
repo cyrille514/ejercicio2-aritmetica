@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+    </script>
+  
+    <style type="text/tailwindcss">
+      @import "tailwindcss"; 
+  
+      @layer base {
+        p, h1, h2, h3 {
+          @apply mb-2 leading-relaxed text-gray-700
+        }
+        h1, h2, h3 {
+          @apply mt-2 font-bold text-slate-500
+        }
+        input {
+          @apply rounded-sm border-1 border-slate-300 text-slate-400 font-mono
+        }
+        input, label {
+          @apply inline-block flex-1 pl-4
+        }
+        button {
+          @apply rounded-md shadow-xs border-2 border-slate-400 px-4 py-[0.5] my-1
+        }
+        details {
+          @apply mb-4 pb-4 border-b-slate-700 border-b-1
+        }
+        summary {
+          @apply bg-slate-700 text-white font-bold
+        }
+        code {
+          @apply text-blue-800
+        }
+        ul {
+          list-style-type: circle;
+          @apply ml-4
+        }
+      }
+    </style>
+    <title>Ejercicios</title>
+  </head>
+<body class="container w-4/5 mx-auto">
+  <h1 class="font-extrabold text-2xl">Ejercicios Entrada y Salida de Datos / Aritmética</h1>
+  <p>( Cada ejercicio será una página web diferente. Subir a GitHub )</p>
+
+  <h1>Ejercicio 2</h1>
+  <p>Haz un programa que le pida al usuario que introduzca 3 notas por formulario y que muestre como resultado el promedio de las 3 notas per pantalla. Usa la función <code>parseFloat</code> para convertir a número.</p>
+  <h2>Formulario</h2>
+    <div class="w-2/3">
+      <p class="flex">
+        <label class="flex-1" for="notas">introduzca  nota 1:</label>
+        <input class="flex-1" type="number" id="numero1">
+      </p>
+
+      <p class="flex">
+        <label class="flex-1" for="notas">introduzca  nota 2:</label>
+        <input class="flex-1" type="number" id="numero2">
+      </p>
+      <p class="flex">
+        <label class="flex-1" for="notas">introduzca  nota 3:</label>
+        <input class="flex-1" type="number" id="numero3">
+      </p>
+
+      <p id="nota1"></p>
+      <p id="nota2"></p>
+      <p id="nota3"></p>
+      <P id="total"></P>
+      
+      <p><button type="button" onclick="calcular()">muestre como resultado el promedio de las 3 notas per pantalla</button></p>
+    </div>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
+
+
